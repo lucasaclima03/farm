@@ -28,8 +28,9 @@ class _HeaderModalState extends State<HeaderModal> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(5),
-      child: AspectRatio(
-        aspectRatio: 1,
+      child: SizedBox(
+        height: 400,
+        width: 400,
         child: PageView.builder(
             itemCount: itens.length,
             itemBuilder: (context, index) => ItemCard(
