@@ -1,6 +1,7 @@
 import 'package:farm/models/itens.dart';
 import 'package:flutter/material.dart';
 
+import 'categories_card.dart';
 import 'header_modal.dart';
 
 class Body extends StatelessWidget {
@@ -8,8 +9,10 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [HeaderModal()],
+    return SingleChildScrollView(
+      child: Column(
+        children: const [HeaderModal(), CategoriesCard()],
+      ),
     );
   }
 }
