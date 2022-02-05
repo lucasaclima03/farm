@@ -1,27 +1,27 @@
 import 'package:farm/models/itens.dart';
 import 'package:flutter/material.dart';
 
-class HeaderModal extends StatefulWidget {
-  const HeaderModal({Key? key}) : super(key: key);
+class Saia extends StatefulWidget {
+  const Saia({Key? key}) : super(key: key);
 
   @override
-  _HeaderModalState createState() => _HeaderModalState();
+  _SaiaState createState() => _SaiaState();
 }
 
-class _HeaderModalState extends State<HeaderModal> {
+class _SaiaState extends State<Saia> {
   late PageController _pageController;
   int initialPage = 1;
 
   @override
   void initState() {
-    super.initState();
     _pageController = PageController();
+    super.initState();
   }
 
   @override
   void dispose() {
-    super.dispose();
     _pageController.dispose();
+    super.dispose();
   }
 
   @override
@@ -31,36 +31,27 @@ class _HeaderModalState extends State<HeaderModal> {
       child: AspectRatio(
         aspectRatio: 1,
         child: PageView.builder(
-            itemCount: itens.length,
-            itemBuilder: (context, index) => ItemCard(
-                  item: itens[index],
+            itemCount: saias.length,
+            itemBuilder: (context, index) => SaiaCard(
+                  item: saias[index],
                 )),
       ),
     );
   }
 }
 
-class ItemCard extends StatelessWidget {
+class SaiaCard extends StatelessWidget {
   final Item item;
-  const ItemCard({
-    Key? key,
-    required this.item,
-  }) : super(key: key);
+  const SaiaCard({Key? key, required this.item}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: [
         Expanded(
             child: Container(
-          height: 100,
-          width: 400,
           decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(item.poster),
-            ),
-          ),
+              image: DecorationImage(image: AssetImage(item.poster))),
         ))
       ],
     );
