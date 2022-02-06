@@ -52,9 +52,9 @@ class ItemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(
+        Flexible(
             child: Container(
-          height: 100,
+          height: 350,
           width: 400,
           decoration: BoxDecoration(
             image: DecorationImage(

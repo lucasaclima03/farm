@@ -20,51 +20,95 @@ class CategoriesCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage('assets/images/vestido.jpg'),
-                ),
-              ),
-              child: Text('Vestido'),
+            SizedBox(
+              width: 25,
             ),
-            Container(
-                width: 150,
-                height: 150,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
+            Column(
+              children: [
+                Container(
+                  width: 130,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
                       fit: BoxFit.fill,
-                      image: AssetImage('assets/images/kimono.jpg')),
+                      image: AssetImage('assets/images/vestido.jpg'),
+                    ),
+                  ),
                 ),
-                child: Text('Kimono')),
-            Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage('assets/images/blusa.jpg'),
+                SizedBox(
+                  height: 20,
                 ),
-              ),
-              child: Text('blusa'),
+                Text('vestido')
+              ],
             ),
-            Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage('assets/images/vestido_curto.jpg'),
+            SizedBox(
+              width: 20,
+            ),
+            Column(
+              children: [
+                Container(
+                  width: 130,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('assets/images/kimono.jpg')),
+                  ),
                 ),
-              ),
-              child: Text('vestido curto'),
+                SizedBox(
+                  height: 20,
+                ),
+                Text('kimono')
+              ],
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Column(
+              children: [
+                Container(
+                  width: 130,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/blusa.jpg'),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text('blusa'),
+              ],
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Column(
+              children: [
+                Container(
+                  width: 130,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/vestido_curto.jpg'),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text('vestido curto'),
+              ],
+            ),
+            SizedBox(
+              width: 25,
             ),
           ],
         ),

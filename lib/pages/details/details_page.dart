@@ -1,7 +1,10 @@
 import 'package:farm/models/itens.dart';
+import 'package:farm/pages/details/components/card_offers.dart';
 import 'package:flutter/material.dart';
 
+import 'components/card_offers.dart';
 import 'components/header.dart';
+import 'components/poster.dart';
 
 class DetailsPage extends StatelessWidget {
   const DetailsPage({
@@ -20,24 +23,11 @@ class DetailsPage extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Column(
-        children: const [Header(), Poster()],
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [Header(), Poster(), CardOffers()],
+        ),
       ),
-    );
-  }
-}
-
-class Poster extends StatelessWidget {
-  const Poster({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 400,
-      width: 400,
-      decoration: BoxDecoration(
-          image:
-              DecorationImage(image: AssetImage('assets/images/lisos1.jpg'))),
     );
   }
 }
