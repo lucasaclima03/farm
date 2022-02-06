@@ -10,25 +10,38 @@ class Header extends StatelessWidget {
         Padding(
           padding: EdgeInsets.all(10),
           child: Container(
-            height: 50,
-            width: 50,
-            decoration: BoxDecoration(boxShadow: [
-              BoxShadow(
-                offset: Offset(0, 5),
-                blurRadius: 50,
-                color: Color(0xFF121530).withOpacity(0.2),
-              )
-            ], color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+            margin: EdgeInsets.only(left: 30),
+            padding: EdgeInsets.symmetric(horizontal: 15),
+            height: 25,
+            width: 80,
+            decoration: BoxDecoration(
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(30),
+            ),
             child: Text(
               'filtros',
-              style: TextStyle(),
+              style: TextStyle(fontSize: 16),
             ),
           ),
         ),
-        SizedBox(
-          height: 50,
-          width: 60,
-          child: Text('ordernar'),
+        Container(
+          margin: EdgeInsets.only(left: 10),
+          padding: EdgeInsets.symmetric(horizontal: 15),
+          height: 25,
+          width: 120,
+          decoration: BoxDecoration(
+            border: Border.all(),
+            borderRadius: BorderRadius.circular(30),
+          ),
+          child: Row(
+            children: const [
+              Text(
+                'ordernar',
+                style: TextStyle(fontSize: 16),
+              ),
+              Icon(Icons.arrow_drop_down)
+            ],
+          ),
         )
       ],
     );

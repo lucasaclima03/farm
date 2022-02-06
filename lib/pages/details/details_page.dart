@@ -19,7 +19,7 @@ class DetailsPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         title: Text(
-          '                vestido',
+          '            promoções',
           style: TextStyle(color: Colors.black),
         ),
       ),
