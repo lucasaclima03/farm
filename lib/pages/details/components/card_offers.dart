@@ -88,7 +88,7 @@ class CardOffers extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 25),
                         child: Text(
-                          'RS495.00',
+                          'RS327.00',
                           style: TextStyle(
                               fontSize: 12,
                               color: Colors.grey[500],
@@ -98,7 +98,7 @@ class CardOffers extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 20),
                         child: Text(
-                          'RS495.00',
+                          'RS219.00',
                           style: TextStyle(
                               fontSize: 12,
                               color: Colors.red,
@@ -144,7 +144,7 @@ class CardOffers extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 25),
                         child: Text(
-                          'RS495.00',
+                          'RS199.00',
                           style: TextStyle(
                               fontSize: 12,
                               color: Colors.grey[500],
@@ -154,7 +154,7 @@ class CardOffers extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 20),
                         child: Text(
-                          'RS495.00',
+                          'RS109.00',
                           style: TextStyle(
                               fontSize: 12,
                               color: Colors.red,
@@ -194,7 +194,7 @@ class CardOffers extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 25),
                         child: Text(
-                          'RS495.00',
+                          'RS269.00',
                           style: TextStyle(
                               fontSize: 12,
                               color: Colors.grey[500],
@@ -204,7 +204,7 @@ class CardOffers extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(left: 20),
                         child: Text(
-                          'RS495.00',
+                          'RS159.00',
                           style: TextStyle(
                               fontSize: 12,
                               color: Colors.red,

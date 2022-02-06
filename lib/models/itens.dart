@@ -90,3 +90,61 @@ List<Item> saias = [
       conditions: 'até 10x',
       offer: 143.60),
 ];
+List<Item> calcados = [
+  Item(
+      id: 1,
+      poster: 'assets/images/calcado1.jpg',
+      price: 498.20,
+      images: [
+        {
+          "image1": 'assets/images/saia1.jpg',
+          "image2": 'assets/images/saia2.jpg',
+          "image3": 'assets/images/saia3.jpg'
+        }
+      ],
+      title: 'sandália rafia listrada',
+      conditions: 'até 10x',
+      offer: 199.90),
+  Item(
+      id: 2,
+      poster: 'assets/images/calcado2.jpg',
+      price: 698.00,
+      images: [
+        {
+          "image1": 'assets/images/saia4.jpg',
+          "image2": 'assets/images/saia5.jpg',
+          "image3": 'assets/images/saia6.jpg'
+        }
+      ],
+      title: 'sandália franja artesanal',
+      conditions: 'até 10x',
+      offer: 279.00),
+  Item(
+      id: 3,
+      poster: 'assets/images/calcado3.jpg',
+      price: 798.90,
+      images: [
+        {
+          "image1": 'assets/images/saia7.jpg',
+          "image2": 'assets/images/saia8.jpg',
+          "image3": 'assets/images/saia9.jpg'
+        }
+      ],
+      title: 'mule sonho de verão',
+      conditions: 'até 10x',
+      offer: 319.20),
+  Item(
+      id: 4,
+      poster: 'assets/images/calcado4.jpg',
+      price: 798.90,
+      images: [
+        {
+          "image1": 'assets/images/saia7.jpg',
+          "image2": 'assets/images/saia8.jpg',
+          "image3": 'assets/images/saia9.jpg'
+        }
+      ],
+      title: 'sandália caju bordada',
+      conditions: 'até 10x',
+      offer: 319.20),
+];

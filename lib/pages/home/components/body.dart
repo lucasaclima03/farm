@@ -2,6 +2,7 @@ import 'package:farm/models/itens.dart';
 
 import 'package:flutter/material.dart';
 
+import 'calcados.dart';
 import 'categories_card.dart';
 import 'header_modal.dart';
 import 'oferta_do_dia.dart';
@@ -24,6 +25,7 @@ class Body extends StatelessWidget {
           OfertaDoDia(),
           Saia(),
           UltimasOportunidades(),
+          Calcados()
         ],
       ),
     );
