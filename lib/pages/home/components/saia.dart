@@ -14,7 +14,7 @@ class _SaiaState extends State<Saia> {
 
   @override
   void initState() {
-    _pageController = PageController();
+    _pageController = PageController(viewportFraction: 0.8);
     super.initState();
   }
 
@@ -26,16 +26,40 @@ class _SaiaState extends State<Saia> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(5),
-      child: AspectRatio(
-        aspectRatio: 1,
-        child: PageView.builder(
-            itemCount: saias.length,
-            itemBuilder: (context, index) => SaiaCard(
-                  item: saias[index],
-                )),
-      ),
+    return Column(
+      children: [
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          alignment: Alignment.centerLeft,
+          child: Text(
+            'saia',
+            textAlign: TextAlign.start,
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          alignment: Alignment.centerRight,
+          child: Text(
+            'ver tudo',
+            style: TextStyle(color: Colors.grey),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: AspectRatio(
+            aspectRatio: 0.8,
+            child: PageView.builder(
+                controller: _pageController,
+                itemCount: saias.length,
+                itemBuilder: (context, index) => SaiaCard(
+                      item: saias[index],
+                    )),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -46,13 +70,70 @@ class SaiaCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
         Expanded(
-            child: Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(item.poster))),
-        ))
+          child: Container(
+            margin: EdgeInsets.only(
+              left: 20,
+            ),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(item.poster),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: 1),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Text(
+                  item.title,
+                ),
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70),
+                    child: Text(
+                      'RS:  ' + item.price.toString(),
+                      style: TextStyle(
+                        decoration: TextDecoration.lineThrough,
+                        color: Colors.grey[500],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Text(
+                    'RS: ' + item.offer.toString(),
+                    style: TextStyle(color: Colors.red),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  item.conditions,
+                ),
+              )
+            ],
+          ),
+        )
       ],
     );
   }

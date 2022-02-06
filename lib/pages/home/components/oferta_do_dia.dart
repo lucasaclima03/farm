@@ -5,14 +5,21 @@ class OfertaDoDia extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 400,
-      height: 400,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('assets/images/oferta_do_dia.jpg'),
+    return Column(
+      children: [
+        SizedBox(
+          height: 20,
         ),
-      ),
+        Container(
+          width: 400,
+          height: 400,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/oferta_do_dia.jpg'),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

@@ -9,7 +9,10 @@ import 'saia.dart';
 import 'ultimas_oportunidades.dart';
 
 class Body extends StatelessWidget {
-  const Body({Key? key}) : super(key: key);
+  final int _currentPage = 0;
+  final _listSlide = [];
+
+  Body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

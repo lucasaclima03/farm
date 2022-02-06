@@ -1,11 +1,13 @@
 class Item {
   final int id;
-  final double price;
-  final String title, poster;
+  final double price, offer;
+  final String title, poster, conditions;
   final List<Map> images;
 
   Item(
-      {required this.poster,
+      {required this.offer,
+      required this.conditions,
+      required this.poster,
       required this.id,
       required this.price,
       required this.images,
@@ -14,17 +16,20 @@ class Item {
 
 List<Item> itens = [
   Item(
-      id: 1,
-      title: 'capa 1',
-      poster: 'assets/images/capa1.jpg',
-      images: [
-        {
-          "image1": 'assets/images/saia1.jpg',
-          "image2": 'assets/images/saia2.jpg',
-          "image3": 'assets/images/saia2.jpg'
-        }
-      ],
-      price: 143.60),
+    id: 1,
+    title: 'capa 1',
+    poster: 'assets/images/capa1.jpg',
+    images: [
+      {
+        "image1": 'assets/images/saia1.jpg',
+        "image2": 'assets/images/saia2.jpg',
+        "image3": 'assets/images/saia2.jpg'
+      }
+    ],
+    price: 543.90,
+    offer: 259.90,
+    conditions: 'até 10x',
+  ),
   Item(
       id: 2,
       title: 'capa 2',
@@ -36,14 +41,16 @@ List<Item> itens = [
           "image3": 'assets/images/saia2.jpg'
         }
       ],
-      price: 143.60),
+      price: 143.60,
+      conditions: 'até 10x',
+      offer: 200.00),
 ];
 
 List<Item> saias = [
   Item(
       id: 1,
       poster: 'assets/images/saia1.jpg',
-      price: 143.60,
+      price: 549.90,
       images: [
         {
           "image1": 'assets/images/saia1.jpg',
@@ -51,11 +58,13 @@ List<Item> saias = [
           "image3": 'assets/images/saia3.jpg'
         }
       ],
-      title: 'saia veludo doce fauna'),
+      title: 'saia veludo doce fauna',
+      conditions: 'até 10x',
+      offer: 249.90),
   Item(
       id: 2,
       poster: 'assets/images/saia4.jpg',
-      price: 143.60,
+      price: 289.00,
       images: [
         {
           "image1": 'assets/images/saia4.jpg',
@@ -63,11 +72,13 @@ List<Item> saias = [
           "image3": 'assets/images/saia6.jpg'
         }
       ],
-      title: 'saia color black maxi xadrez'),
+      title: 'saia color black maxi xadrez',
+      conditions: 'até 10x',
+      offer: 115.60),
   Item(
       id: 3,
       poster: 'assets/images/saia7.jpg',
-      price: 143.60,
+      price: 359.90,
       images: [
         {
           "image1": 'assets/images/saia7.jpg',
@@ -75,5 +86,7 @@ List<Item> saias = [
           "image3": 'assets/images/saia9.jpg'
         }
       ],
-      title: 'saia cropped tricot rainbow'),
+      title: 'saia cropped tricot rainbow',
+      conditions: 'até 10x',
+      offer: 143.60),
 ];
