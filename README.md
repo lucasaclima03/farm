@@ -1,16 +1,23 @@
-# farm
+# Farm
 
-A new Flutter project.
+Estudo de criação de layout baseado no aplicativo da FARM.  
+Todos os direitos de imagem são reservados à FARM.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## GIF
 
-A few resources to get you started if this is your first Flutter project:
+![Caption](https://github.com/lucasaclima03/farm/blob/main/assets/gif/farm-app.gif)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Como rodar  
+Faça o clone deste repositório para sua máquina local, rode no terminal o comando 
+`dart pub get`  
+inicie o emulador
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Implementações futuras  
+  
+Refatorar o app com melhores práticas[ ]  
+Deixar as outras opções do app funcionais [ ]
+
+
+
+
