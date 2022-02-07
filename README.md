@@ -17,6 +17,7 @@ inicie o emulador
   
 Refatorar o app com melhores práticas[ ]  
 Deixar as outras opções do app funcionais [ ]
+Adicionar demais categorias do app [ ]
 
 
 
